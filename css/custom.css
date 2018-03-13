@@ -73,6 +73,8 @@ a:hover {
 	text-align: center;
 }
 
+
+
 /*!
  * 5374.jpについて
  */
@@ -116,6 +118,19 @@ a:hover {
 	margin-left: 5px;
 }
 
+#help{
+	margin-left: 5px;
+	color: #2c3e50;
+}
+#help p{
+	color: #34495e;
+	font-size: 10px;
+}
+#help li{
+	list-style: none;
+	color: #2c3e50;
+}
+
 /*!
  * Maybe not in use. Remove these later.
  */
@@ -128,8 +143,4 @@ a:hover {
 }
 .accordion-group-top {
 	background-color: #ffffff;
-}
-#cfk > p > a{
-	 color: #FF0000;
-	 text-decoration: underline;
 }

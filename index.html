@@ -14,36 +14,68 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
     <link href="css/custom.css" rel="stylesheet" media="screen" />
-  <style type="text/css">
-<!--
-.box {
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    background: #FFF;
-    border: solid 3px #000;/*線*/
-    border-radius: 10px;/*角の丸み*/
-}
-.box p {
-    margin: 0; 
-    padding: 0;
-}
-.box-yellow {
-    border: solid 3px #F2F5A9;/*線*/
-}
-.box-green {
-    border: solid 3px #088A08;/*線*/
-}
-.box-red {
-    border: solid 3px #ff0000;/*線*/
-}
-.box-red h4 {
-  color: #ff0000;
-}
-.box-blue {
-    border: solid 3px #0000ff;/*線*/
-}      
--->
-</style>
+    <style type="text/css">
+      .box {
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        background: #FFF;
+        border: solid 3px #000;/*線*/
+        border-radius: 10px;/*角の丸み*/
+      }
+      .box p {
+        margin: 0; 
+        padding: 0;
+      }
+      .box-yellow {
+        border: solid 3px #F2F5A9;/*線*/
+      }
+      .box-green {
+        border: solid 3px #088A08;/*線*/
+      }
+      .box-red {
+        border: solid 3px #ff0000;/*線*/
+      }
+      .box-red h4 {
+        color: #ff0000;
+      }
+      .box-blue {
+        border: solid 3px #0000ff;/*線*/
+      }
+      #help span.label.label-danger {
+        border-radius: 10px;
+        display: inline-block;
+        padding: 3px 7px;
+        font-size: 12px;
+      }
+      #help dl {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #help dl dt, #help dl dd {
+        margin-bottom: 5px;
+        /* height: auto; */
+      }
+      /* Small devices (tablets, 768px and up) */
+      @media (max-width: 768px) {
+        #help dl dt, #help dl dd {
+          padding: 3px!important;
+        }
+      }
+      #help h5 {
+        font-weight: bold;
+      }
+      #help .panel p {
+        font-size: 1.3rem;
+      }
+      #help .panel-heading {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      #help .panel-body h5 {
+        border-left: 1rem solid #3a87ad;
+        padding-left: 1rem;
+      }
+    </style>
   </head>
   <body>
   <style id="accordion-style" type="text/css"></style>
@@ -53,116 +85,74 @@
   <div class="accordion" id="accordion3">
     <div class="accordion-group-top">
       <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">直接ごみを持ち込む場合</a>
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">粗大ごみ</a>
       </div>
       <div id="collapse3_1" class="accordion-body collapse">
         <div class="accordion-inner">
           <div id="help">
-            <h2>脊振広域クリーンセンターへ直接ごみを持ち込む場合</h2>
-            <h4 style="color:#ff0000;">《 注意事項 》</h4>
-            事業所から排出される産業廃棄物は引き取りができませんので、お持ち帰りいただく場合があります。<br>
-            専門の処理業者へ依頼し処理してください。<br>
-            <span style="color:#ff0000;">ごみを出されるご本人及び家族以外の持ち込みはできません。（業者等（第三者）の搬入不可）</span><br>
-            直接搬入ができない場合は<span style="color:#0000ff;">「臨時粗大ごみ等収集制度」</span>をご活用ください。<br>
-            直接搬入する場合は、事前に種類ごとの分別をお願いします。<br>
-            <strong>[脊振広域クリーンセンター]<br>
-            所在地　〒842-0202　佐賀県神埼市脊振町鹿路3362番地1　連絡先　TEL：0952-51-9010</strong><br>
-              <br>
-            <h4 style="color:#ff0000;">搬入時間（受付時間）<small><span style="color:#ff0000;">※時間厳守でお願いします。</span></small></h4>
-            月～金曜日：8：30～11：30（午前）、13：00～16：30（午後）※祝日も同じ<br>
-            土曜日：8：30～12：00（午前）※祝日も午前中のみ<br>
-            日曜日：休み<br>
-            <small>※年末（12月下旬）は大掃除等により大変混み合い、待ち時間も長くなりますので、12月上旬・中旬の搬入をお薦めします。</small><br>  
-            
-            <h4 style="color:#ff0000;">料金</h4>
-            <strong>家庭系ごみ・・・<span style="color:#088A08;">１０kgあたり　　７５円</span></strong><br>
-            <strong>事業系ごみ・・・<span style="color:#088A08;">１０kgあたり　１５０円</span></strong><br>
-            （重量に１０kg未満の端数があるときは、これを四捨五入して得た重量とし、その重量が０kgとなる場合は無料となります。）<br>
-            <strong>小動物死がい・・・<span style="color:#088A08;">１体あたり　４００円</span></strong><br>
-            （搬入時ダンボール等への梱包が必要です。）<br>
-            <h4 style="color:#ff0000;">持ち込めるもの及び持ちこめないもの　<small><span style="color:#ff0000;">※事前に分別をお願いします。</span></small></h4>
-            ・ごみの種類ごとに<span style="color:#088A08;">分別</span>もしくは「<span style="color:#088A08;">粗大ごみの出し方</span>」をご覧ください。<br>
-            ・脊振広域クリーンセンターで処理できないものは、お持ち帰りいただく場合があります。<br>
-              詳しくは「<span style="color:#0000ff;">収集及び直接搬入できないもの</span>」を事前にご確認ください。<br>
-            <br>
-            ※ホームページにも掲載しておりますのでご覧ください。ホームページアドレス：<a href="http://sefuri-jinkai.jp" target="_blank" style="color: #FF0000;text-decoration: underline;">http://sefuri-jinkai.jp</a>
-            <h4 style="color:#ff0000;">その他</h4>  
-            ・住所確認のため、<span style="color:#088A08;">身分証明書</span>（免許証、保険証等）をご提示ください。<br>
-            ・<span style="color:#ff0000;">ごみを直接持ち込む場合は、指定ごみ袋のご使用は不要です。（粗大ごみステッカーも不要です。）</span><br>
-            　黒い袋（中身が確認できない袋）での搬入はできません。透明もしくは半透明の袋をご使用ください。<br>
-            ・持ち込まれた場合は係員の指示に従い、ご自分で荷下ろしを行ってください。<br>
-            <h4 style="color:#ff0000;">※ごみの不法投棄は罰せられます。<small><span style="color:#ff0000;">（５年以下の懲役若しくは、1,000万円以下の罰金又は、この併料）</span></small></h4>  
-            
-            <hr>
-            <h2>佐賀市清掃工場および佐賀市清掃工場南部中継所へ直接ごみを持ち込む場合</h2>
-            <br>
-            <span style="color:#0000ff;">■持ち込める施設及び受付日時　※年末年始の受付日時は、市報等で別途お知らせします。</span><br>
-            <h4>〇佐賀市清掃工場</h4>
-            所在地：佐賀市高木瀬大字長瀬２３６９　TEL：0952-30-2430<br>
-            受付日時：月曜～金曜　８時３０分～１７時（祝日も同じ）<br>
-            　　　　　土曜　　　　８時３０分～１２時（祝日も同じ）<br>
-            　　　　　日曜　　　　休み<br>
-            <br>
-            <h4>〇佐賀市清掃工場南部中継所</h4>
-            所在地：佐賀市川副町大字犬井道５７２７　TEL：0952-45-7251<br>
-            受付日時：月曜～金曜　８時３０分～１１時３０分、１３時～１６時３０分（祝日も同じ）<br>
-            　　　　　土曜　　　　８時３０分～１１時３０分（祝日も同じ）<br>
-            　　　　　日曜　　　　休み<br>
-            <br>
-            <span style="color:#0000ff;">■家庭系ごみの手数料（車両１台ごと）</span><br>
-            <div class="box box-yellow">
-              <ul style="margin: 0;font-weight:bold;">
-                <li>１００kgまで　・・・・・・・・・・・・・・４００円</li>
-                <li>１００kgを超え１５０kgまで　・・・・・・・４５０円</li>
-                <li>１５０kgを超えるもの　・・・・・<small>50kgにつき</small> １５０円</li>
-                <li>ペットの死がい※　・・・・・・・・<small>1体につき</small> ４００円</li>
-                <li>※ペットの死がいは佐賀市清掃工場南部中継所では受付できません。</li>
+            <p style="font-size: 1.4rem;">指定袋に入らない大きさのものは粗大ごみです。以下のいずれかの方法で処分してください。</p>
+            <a href="https://www.city.saga.lg.jp/main/3036.html" target="_blank" class="btn btn-info">詳しくはコチラ ></a>
+            <div class="panel panel-info" style="margin-top: 15px;">
+              <div class="panel-heading">直接搬入</div>
+              <div class="panel-body">
+                以下のごみ処理施設に直接持ち込む方法です。
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item"><strong>脊振クリーンセンター</strong></li>
+                <li class="list-group-item"><strong>佐賀市清掃工場（高木瀬町）</strong><span class="label label-danger">※</span></li>
+                <li class="list-group-item"><strong>佐賀市清掃工場南部中継所（川副町）</strong><span class="label label-danger">※</span></li>
               </ul>
+              <div class="panel-footer bg-none">
+                <small class="text-danger">
+                  <span class="label label-danger">※</span>
+                  土曜・祝日に搬入する際は、事前予約が必要です。
+                </small>
+                <br>
+                <a href="https://www.city.saga.lg.jp/main/66511.html" target="_blank" class="btn btn-info" style="margin-top: 1rem; font-size: 12px; padding: 3px 10px;">詳しくはコチラ ></a>
+              </div>
             </div>
-            <span style="color:#ff0000;">《注意事項》<br>
-            ごみを出される本人以外の持ち込みはできません。</span><br>
-            受付の際は、住所・氏名が確認できる<span style="color:#ff0000;">身分証明書（運転免許証など）</span>が必要です。<br>
-            持ち込む前、車に乗せる前に、<span style="color:#ff0000;">必ず分別して</span>おいてください。<br>
-            
-            <hr>
-            <div class="box box-green">
-              <h4 style="color:#088A08;">使用済み食用油（植物性）の回収にご協力ください</h4>
-              使用済み食用油を処分される場合は、ふた付の容器に入れて、市内各所のスーパー等に設置している「緑色の回収ボックス」に買い物の際にでもお出しください。
+            <div class="panel panel-info" style="margin-top: 15px;">
+              <div class="panel-heading">定期収集（ステッカー方式）</div>
+              <div class="panel-body">
+                月に1回、地区ごとに決められた収集日に、ご自宅まで市の委託業者が回収にうかがう方法です。市内の郵便局もしくは金融機関の窓口で事前に申し込みが必要です。
+                <dl class="row row-no-gutters">
+                  <dt class="col-4">料金</dt>
+                  <dd class="col-8">500円/個</dd>
+                  <dt class="col-4">申込締切</dt>
+                  <dd class="col-8">毎月25日まで<small class="text-muted">（25日が土・日・祝日の場合は、直前の各窓口営業日まで）</small></dd>
+                  <dt class="col-4">収集日</dt>
+                  <dd class="col-8">申し込みの翌月2回目の水曜日</dd>
+                </dl>
+              </div>
             </div>
-              
-            <div class="box box-yellow">
-              <h4>★植木剪定くず　<small><span style="color: #000;">剪定くず等を持込む場合の切断基準は次のとおりです。</span></small></h4>
-              <ul>
-                <li><span style="color:#ff0000;">・直径５㎝未満の枝葉は長さ５０㎝以内に切断。</span></li>
-                <li><span style="color:#ff0000;">・直径５㎝以上の枝葉は長さ１m以内に切断。</span></li>
-                <li><span style="color:#ff0000;">※直径２０㎝以上の丸太類はさらに縦割りもしくは輪切りし、極力細かくしてください。</span></li>
-                <li><span style="color:#0000ff;">※受け入れ時間を短縮するため、ご協力をよろしくお願いします。</span></li>
-              </ul>
+            <div class="panel panel-info" style="margin-top: 15px;">
+              <div class="panel-heading">臨時収集</div>
+              <div class="panel-body">
+                市の委託業者に直接依頼し、ご希望の日時にあわせて2トン車で回収にうかがう方法です。引越しなど、品物が多量の場合や急ぎの処分の際にご利用ください。校区ごとに業者が異なりますので、佐賀市清掃工場：<a href="tel:0952302430" class="text-info">0952-30-2430</a>へお問い合わせください。
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">荷物の量</th>
+                    <th scope="col">料金</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>2トン車の荷台　1/3未満</th>
+                    <td>3,200円</td>
+                  </tr>
+                  <tr>
+                    <th>2トン車の荷台　1/3以上～2/3未満</th>
+                    <td>6,400円</td>
+                  </tr>
+                  <tr>
+                    <th>2トン車の荷台　2/3以上</th>
+                    <td>9,600円</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <div class="box box-blue">
-              <h4 style="color:#0000ff;">臨時粗大ごみ等収集制度</h4>
-              臨時的にごみが出たとき（大掃除や引っ越し等）や、直接ごみを搬入することが出来ない場合に指定委託業者へ収集を依頼できる制度です。<br>
-              <h4>臨時収集の料金（１台１回につき）　※処分料含む</h4>
-              <strong>２トン車の荷台　３分の１未満　　　　　　　　　3,200円</strong><br>
-              <strong>２トン車の荷台　３分の１以上～３分の２未満　　6,400円</strong><br>
-              <strong>２トン車の荷台　３分の２以上　　　　　　　　　9,600円</strong><br>
-              <br>
-              ※委託業者は家の中まで入りませんので、回収当日は、品物を１階玄関の外に出しておいてください。<br>
-              受付（お問い合わせ先）は、 佐賀市清掃工場　TEL:0952-30-2430 までご連絡ください。
-            </div>
-
-            <div class="box box-red">
-            <h4>家の解体・リフォーム等で出た建築廃材は持ち込みできません。（畳等含む）</h4>
-            </div>
-
-            <div class="box">
-            <h4>ごみ減量化推進補助金</h4>
-              ごみ減量化・資源化を目的とし、生ごみ処理容器等の購入に伴う補助金制度がありますのでご活用ください。<br>
-              <span style="color: #ff0000;">【補助金額】</span><br>
-              ・１品目の購入金額（税込）の２分の１に相当する額で１品につき5,000円を限度とします。（円未満切捨）
-            </div>
-
           </div>
         </div>
       </div>
@@ -171,180 +161,233 @@
   <div class="accordion" id="accordion3">
     <div class="accordion-group-top">
       <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_2"><small>家庭用</small> 粗大ごみの出し方</a>
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_2">脊振広域クリーンセンター</a>
       </div>
       <div id="collapse3_2" class="accordion-body collapse">
         <div class="accordion-inner">
           <div id="help">
-            <div class="box box-red">
-            <h4>粗大ごみの収集を依頼される場合は、事前に申込みが必要です。</h4>
+            <div class="panel panel-info" style="margin-top: 15px;">
+              <div class="panel-heading">脊振広域クリーンセンター</div>
+              <div class="panel-body">
+                <h5>所在地</h5>
+                <p>佐賀県神埼市脊振町鹿路3362番地1</p>
+                <h5>電話番号</h5>
+                <a href="tel:0952519010" class="text-info">0952-51-9010</a>
+                <h5>受付時間</h5>
+                <dl class="row row-no-gutters">
+                  <dt class="col-4">月~金曜日</dt>
+                  <dd class="col-8">8:30～11:30、13:00～16:30（祝日も同じ）</dd>
+                  <dt class="col-4">土曜日</dt>
+                  <dd class="col-8">8:30～12:00（祝日も同じ）</dd>
+                  <dt class="col-4">日曜日</dt>
+                  <dd class="col-8">休み</dd>
+                </dl>
+                <h5>料金</h5>
+                <dl class="row row-no-gutters">
+                  <dt class="col-4">家庭系ごみ</dt>
+                  <dd class="col-8">75円/<small class="text-muted">10kg</small></dd>
+                  <dt class="col-4">事業系ごみ</dt>
+                  <dd class="col-8">150円/<small class="text-muted">10kg</small></dd>
+                  <dt class="col-4">小動物死がい</dt>
+                  <dd class="col-8">400円/<small class="text-muted">1体</small></dd>
+                </dl>
+              </div>
+              <div class="panel-footer bg-none">
+                <p>品物によっては収集及び直接搬入できないものがあります。</p>
+                <a href="http://www.sefuri-jinkai.jp/" target="_blank" class="btn btn-info" style="margin-top: 1rem; font-size: 12px; padding: 3px 10px;">詳しくはコチラ ></a>
+                <h5 class="text-danger"><<注意事項>></h5>
+                <ul>
+                  <li style="list-style: square;">住所確認のため、身分証明書（免許証、保険証等）をご提示ください。</li>
+                  <li style="list-style: square;">搬入の際は、透明もしくは半透明の袋（中身が確認できるもの）をご使用ください。</li>
+                  <li style="list-style: square;">場内では係員の指示に従い、ご自分で荷下ろしを行ってください。</li>
+                </ul>
+                <br>
+              </div>
             </div>
-            
-            <h4 style="color: #ff0000;">◎小動物の死がいは、直接搬入する場合のみ引き取りしております。詳しくは<strong>「直接ごみを持ち込む場合」</strong>をご覧ください。</h4>
-            <h4 style="color: #ff0000;">◎事業系一般廃棄物を直接搬入する場合は、制限等がありますので事前にお問い合わせください。（産業廃棄物は持込めません）</h4>
-            
-            <div class="box box-blue"><h4 style="color: #0000ff;">粗大ごみ収集（ステッカー方式）は月１回（２回目の水曜日）収集です。</h4></div>
-            
-            <h2>粗大ごみ（ステッカー方式）の出し方</h2>
-            「収集及び直接搬入できるもの」のうち、「指定袋」に入らないものを「粗大ごみ」として、取扱っています。「粗大ごみ」にステッカーを貼って、収集を依頼する方法は次のとおりです。<br>
-            
-            <br>
-            <h4 style="color: #0000ff;">１．申し込み</h4>
-            佐賀市内の<span style="color:#ff0000;">金融機関の窓口で申し込み</span>し、粗大ごみ１個につき、料金500円を納めてください。（このときに、<span style="color:#0000ff;">粗大ごみステッカー</span>をお渡しします。）<br>
-            <br>
-            毎月の25日までに申し込みされますと、翌月の２回目の水曜日に収集します。（25日が土・日・祝日の場合は、直前の金融機関営業日が締め切り日です。）<br>
-<br>
-            ★料　金：<span style="color:#ff0000;">５００円／個</span><br>
-            ★収集日：<span style="color:#ff0000;">毎月２５日まで</span> に申し込みすると<br>
-            　　　　　<span style="color:#ff0000;">翌月の２回目の水曜日</span> に収集します。<br>
-            <br>
-            <h4 style="color: #0000ff;">２．収集当日の出し方</h4>
-            申し込んだ粗大ごみに<span style="color:#0000ff;">粗大ごみステッカー</span>を貼り、収集日の午前８時までに自宅の玄関先（道路から見え、収集しやすい場所）に出しておいてください。<br>
-            回収業者が戸別に回収に参ります。<br>
-            <br>
-           <h4 style="color: #FF8000;">ご不明な点は、佐賀市清掃工場　TEL:0952-30-2430 までお問い合わせください。</h4>
-           <hr>
-           
-           <h2>粗大ごみの処理できる大きさ</h2>
-           <h3>可燃性粗大ごみ　<small>（燃えるごみの袋に入らないもの）</small></h3> 
-           ＜処理できる大きさの範囲＞ 
-           <h4 style="color: #ff0000;">幅 90cm　×　高さ 80cm　×　長さ 180㎝ 未満</h4>
-           ※剪定くずは規格が異なります。「直接ごみを持ち込む場合」をご参照ください。<br>
-           <br>
-           <h3>不燃性粗大ごみ　<small>（燃えないごみの袋に入らないもの）（鉄板等の厚さ3.2mm以内）</small></h3> 
-           ＜処理できる大きさの範囲＞ 
-            <h4 style="color: #ff0000;">幅 100cm　×　高さ 100cm　×　長さ 180㎝ 未満</h4>           
           </div>
         </div>
       </div>
     </div>
   </div><hr>
-  <!--
-<div class="accordion" id="accordion3">
+  <div class="accordion" id="accordion3">
     <div class="accordion-group-top">
       <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_3">直接搬入のみ</a>
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_3">直接搬入<small style="font-size: 1.7rem;">（佐賀市清掃工場、南部中継所）</small></a>
       </div>
       <div id="collapse3_3" class="accordion-body collapse">
         <div class="accordion-inner">
           <div id="help">
-           「佐賀市清掃工場」もしくは「佐賀市清掃工場南部中継所（旧川副・東与賀清掃センター）」に直接持ち込んでください。 <br/>
-            ◆佐賀市清掃工場（高木瀬町）について詳しくは<a href="https://www.city.saga.lg.jp/main/808" target="_blank" style=" color: #FF0000;text-decoration: underline;">コチラ</a><br/>
-            ◆佐賀市清掃工場南部中継所（川副町）について詳しくは<a href="https://www.city.saga.lg.jp/main/897" target="_blank" style=" color: #FF0000;text-decoration: underline;">コチラ</a>
-            <h4>直接搬入のみ</h4>
+            <p style="font-size: 1.4rem;">土曜・祝日に直接搬入する際は事前予約が必要です。</p>
+            <a href="https://www.city.saga.lg.jp/main/66511.html" target="_blank" class="btn btn-info">詳しくはコチラ ></a>
+            
+            <div class="panel panel-info" style="margin-top: 15px;">
+              <div class="panel-heading">佐賀市清掃工場</div>
+              <div class="panel-body">
+                <h5>所在地</h5>
+                <p>佐賀市高木瀬町長瀬2369番地</p>
+                <h5>電話番号</h5>
+                <a href="tel:0952302430" class="text-info">0952-30-2430</a>
+                <h5>受付時間</h5>
+                <dl class="row row-no-gutters">
+                  <dt class="col-4">月~金曜日</dt>
+                  <dd class="col-8">8:30～17:00<small class="text-muted">（祝日も同じ）</small></dd>
+                  <dt class="col-4">土曜日</dt>
+                  <dd class="col-8">8:30～12:00<small class="text-muted">（祝日も同じ）</small></dd>
+                  <dt class="col-4">日曜日</dt>
+                  <dd class="col-8">休み</dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="panel panel-info" style="margin-top: 15px;">
+              <div class="panel-heading">佐賀市清掃工場南部中継所</div>
+              <div class="panel-body">
+                <h5>所在地</h5>
+                <p>佐賀市川副町犬井道5727番地</p>
+                <h5>電話番号</h5>
+                <a href="tel:0952457251" class="text-info">0952-45-7251</a>
+                <h5>受付時間</h5>
+                <dl class="row row-no-gutters">
+                  <dt class="col-4">月~金曜日</dt>
+                  <dd class="col-8">8:30～11:30、13:00～16:30<small class="text-muted">（祝日も同じ）</small></dd>
+                  <dt class="col-4">土曜日</dt>
+                  <dd class="col-8">8:30～11:30<small class="text-muted">（祝日も同じ）</small></dd>
+                  <dt class="col-4">日曜日</dt>
+                  <dd class="col-8">休み</dd>
+                </dl>
+              </div>
+            </div>
+
+            <table class="table table-bordered">
+              <caption>搬入料金</caption>
+              <thead>
+                <tr>
+                  <th scope="col">重さ</th>
+                  <th scope="col">家庭系</th>
+                  <th scope="col">事業系</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>~50kg</th>
+                  <td>400円</td>
+                  <td>800円</td>
+                </tr>
+                <tr>
+                  <th>~100kg</th>
+                  <td>600円</td>
+                  <td>1,200円</td>
+                </tr>
+                <tr>
+                  <th>以降50kgにつき</th>
+                  <td>300円</td>
+                  <td>600円</td>
+                </tr>
+              </tbody>
+            </table>
+            <small class="text-danger">小動物死がいは1体につき400円（南部中継所は受け入れできません）</small>
+
+            <h4 class="text-danger"><<注意事項>></h4>
             <ul>
-              <li>焼却灰（釜戸、仏壇、暖炉から出るもの）</li>
-              <p>野焼きや家庭用焼却炉などの灰は受け付けません。</p>
-              <li>練炭</li>
+              <li style="list-style: square;">「佐賀市外のごみ」や、「ごみを出される本人以外の持ち込み」は受付できません。</li>
+              <li style="list-style: square;">受付の際は、住所・氏名が確認できる身分証明書（運転免許証など）が必要です。</li>
+              <li style="list-style: square;">事前にごみの種類ごとに分別してお持ちください。</li>
+              <li style="list-style: square;">品物によっては市の施設で受け入れができない処理困難物があります。専門の処理業者または販売店にご相談ください。</li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><hr>-->
-  <div class="accordion" id="accordion3">
-    <div class="accordion-group-top">
-      <div class="accordion-heading">
-        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse3_4">収集及び直接搬入できないもの</a>
-      </div>
-      <div id="collapse3_4" class="accordion-body collapse">
-        <div class="accordion-inner">
-          <div id="help">
-           脊振広域クリーンセンターでは処理ができませんので、販売店または専門の処理業者までお問い合わせください。<br/>
-            <h4>農業・漁業関係</h4>
+
+            <h3>処理困難物</h3>
+            <h4>あ</h4>
+              <ul>
+                <li>石、岩</li>
+                <p>砥石は燃えないごみへ</p>
+                <li>医療廃棄物</li>
+                <li>ウォーターサーバー</li>
+                <li>うす</li>
+                <li>塩化ビニル製品</li>
+              </ul>
+
+            <h4>か</h4>
             <ul>
-              <li>コンバイン・トラクター及び部品</li>
-              <li>田植機及び部品</li>
-              <li>鍬、鎌、草刈機・刃等（農業用）</li>
-              <li>農薬ビン及び缶</li>
-              <li>農薬噴霧器</li>
-              <li>チェーンソー</li>
-              <li>ビニールハウス（パイプ・ビニール）</li>
-              <li>苗箱</li>
-              <li>のり網</li>
-              <li>農業・漁業用塩ビパイプ類</li>
-            </ul>
-            <h4>健康器具類</h4>
-            <ul>
-              <li>マッサージ器（イス式・ベッド式）</li>
-              <li>ロデオマシン</li>
-            </ul>
-            <h4>自動車関係</h4>
-            <ul>
-              <li>自動車</li>
-              <li>タイヤ</li>
-              <li>タイヤホイール</li>
-              <li>バイク</li>
-              <li>バッテリー</li>
-            </ul>
-            <h4>建築用関係</h4>
-            <ul>
-              <li>建設廃材</li>
-              <li>コンクリート･ブロック類</li>
-              <li>パイプ･鋼材等の長尺物</li>
-              <li>便器（陶器製）</li>
-              <li>スレート</li>
-              <li>石</li>
-              <li>レンガ</li>
+              <li>ガスボンベ</li>
+              <li>刀</li>
+              <p>佐賀北警察署（担当：生活安全課）へご連絡ください。</p>
+              <li>神棚</li>
               <li>瓦</li>
+              <li>木の根</li>
+              <li>金庫（耐火製品）</li>
+              <li>クッションフロア（台所等の床材）</li>
+              <li>建築廃材</li>
+              <li>コンクリートくず</li>
+            </ul>
+
+            <h4>さ</h4>
+            <ul>
+              <li>自動車、自動車の部品</li>
+              <li>消火器（中身有り）</li>
+              <p>消化器リサイクル推進センター（℡03-5829-6773）にご相談ください。</p>
+              <li>除草剤</li>
+              <li>シンナー</li>
+              <li>スレート</li>
+            </ul>
+
+            <h4>た</h4>
+            <ul>
+              <li>タイヤ</li>
               <li>タイル</li>
               <li>断熱材</li>
-              <li>石膏ボード</li>
+              <li>注射器、注射針</li>
+              <p>医療廃棄物のため、医療機関や専門の処理業者にご相談ください。</p>
+              <li>土（泥）</li>
+              <li>電気温水器（屋外のボイラー）</li>
+              <li>灯油</li>
+              <p>専門の処理業者か販売店（ガソリンスタンド等）にご相談ください。</p>
+              <li>塗料</li>
+              <p>少量なら紙等に吸わせて「燃えるごみ」へ。</p>
             </ul>
-            <h4>その他</h4>
+
+            <h4>な</h4>
             <ul>
-              <li>電気温水器タンク</li>
-              <li>太陽熱温水器</li>
-              <li>物干し台（土台部分）</li>
-              <li>家庭用井戸ポンプ</li>
-              <li>水道用配管</li>
-              <li>消防ホース</li>
-              <li>業務用冷蔵庫・冷凍庫</li>
-              <li>自動販売機</li>
-              <li>電動機（発電機）</li>
-              <li>パレット</li>
-              <li>爆発の恐れがあるもの</li>
-              <li>ガス及び酸素ボンベ</li>
-              <li>浴槽（ホーロー）</li>
+              <li>波板</li>
+              <li>農機具（大型のもの）</li>
+              <li>農業用ビニール</li>
+              <li>農薬</li>
+            </ul>
+
+            <h4>は</h4>
+            <ul>
+              <li>バイク（50ccを超えるもの）</li>
+              <p>50cc以下のものは粗大ごみ。</p>
+              <li>廃油</li>
+              <p>食用油（植物性）は市内スーパーの店頭や公民館などに設置している緑色の回収ボックスへ、油がこぼれないようふたをして入れてください。</p>
+              <li>パソコン（デスクトップ、本体）</li>
+              <p>リネットジャパンリサイクル株式会社（佐賀市連携事業者）もしくは各メーカーの回収受付窓口にご相談ください。</p>
+              <li>バッテリー</li>
               <li>ピアノ</li>
-              <li>消火器</li>
-              <li>漬物重し</li>
-              <li>仏壇</li>
-              <li>ドラム缶（200L）</li>
-              <li>ボウリングボール</li>
-              <li>コンプレッサー</li>
-              <li>産業廃棄物</li>
-              <li>うす</li>
+              <p>電子ピアノは粗大ごみ。</p>
+              <li>ブロック</li>
+              <li>ペットのトイレ砂（天然の砂）</li>
+              <li>ペンキ</li>
+              <p>少量なら紙等に吸わせて「燃えるごみ」へ。</p>
             </ul>
-            <h4>パソコン（家庭用）</h4>
+
+            <h4>ま</h4>
             <ul>
-              <li>パソコン（デスクトップ型・ノート型）</li>
-              <p>処理する場合はメーカー等にお問い合わせください。<br>
-                メーカー不明の場合（一社）パソコン3R推進協会　TEL:03-5282-7685 HP:<a href="http://www.pc3r.jp" target="_blank">http://www.pc3r.jp</a></p>
+              <li>麦わら屋根</li>
+              <li>木材（大型のもの）</li>
+              <p>直径10cm以上、長さ1m以上の木材は不可。専門の処理業者にご相談ください。</p>
             </ul>
-            <h4>携帯電話の処理</h4>
+
+            <h4>や</h4>
             <ul>
-              <li>使わなくなった携帯電話は、購入店もしくは販売店などで回収されていますので引き取ってもらうようにしてください。</li>
+              <li>薬品類</li>
+              <li>床材</li>
+              <li>浴槽</li>
             </ul>
-            <hr>
-            <h3>家電リサイクル４品目の取扱い</h3>
-            処分には「<span style="color: #FF0000;">メーカーのリサイクル料金</span>」と「<span style="color: #FF0000;">収集運搬料金</span>」が必要になります。
-            <br><br>
-            ・テレビ（ブラウン管式・液晶式・プラズマ式）<br>
-            ・冷蔵庫及び冷凍庫・保冷庫・冷温庫<br>
-            ・洗濯機及び衣類乾燥機<br>
-            ・エアコン（室外機含む）<br>
-            <h5>【排出方法】</h5>
-            <ul style="list-style-type: square">
-              <li style="list-style: square;">購入店が分かっている場合<br>
-              <span style="color: #0000ff;">購入店へご相談ください。</span>
-              <p>（販売店には法により、引き取りの義務があります。）</p></li>
-              <li style="list-style: square;">買い換えの場合<br>
-              <span style="color: #0000ff;">買い換える店へご相談ください。</span>
-              <p>（販売店には法により、引き取りの義務があります。）</p></li>
-              <li style="list-style: square;">それ以外の場合<br>
-              <span style="color: #0000ff;">佐賀市清掃工場までご相談ください。</span></li>
-            </ul>  
+
+            <h4>ら</h4>
+            <ul>
+              <li>レンガ</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -401,7 +444,7 @@
     </div>
   </div><hr>
   <div id="help">
-  令和三年度版　諸富・三瀬
+  令和四年度版　諸富・三瀬
   </div>
   <!-- JavaScript plugins (requires jQuery) -->
   <script src="js/jquery-1.10.2.min.js"></script>

@@ -90,9 +90,17 @@ var TrashModel = function(_lable, _cell, remarks) {
       result_text += "第" + this.dayCell[j].charAt(1) + this.dayCell[j].charAt(0) + "曜日 ";
     } else if (this.dayCell[j].length == 2 && this.dayCell[j].substr(0,1) == "*") {
     } else {
-      // 不定期回収の場合（YYYYMMDD指定）
-      result_text = "年末年始調整日 ";
-      this.regularFlg = 0;  // 定期回収フラグオフ
+      if (this.dayCell.length > 1) {
+        var adjustmentDate = new Date(this.dayCell[j].substring(0,4) + '-' + this.dayCell[j].substring(4,6) + '-' + this.dayCell[j].substring(6,8));
+        if (today <= adjustmentDate) {
+          result_text += "年末年始調整日 "
+        }
+        this.sagaFlg = 1;
+      } else {
+        // 不定期回収の場合（YYYYMMDD指定）
+        result_text = "不定期 ";
+        this.regularFlg = 0;  // 定期回収フラグオフ
+      }
     }
   }
   this.dayLabel = result_text;
@@ -193,6 +201,18 @@ var TrashModel = function(_lable, _cell, remarks) {
             }
             day_list.push(d);
           }
+        }
+      }
+      if (this.sagaFlg === 1) {
+        if (Array.isArray(day_mix)) {
+          day_mix.forEach((v, i) => {
+            if (!v.match(/^\d{8}$/)) { return; }
+            var year = parseInt(day_mix[i].substr(0, 4));
+            var month = parseInt(day_mix[i].substr(4, 2)) - 1;
+            var day = parseInt(day_mix[i].substr(6, 2));
+            var d = new Date(year, month, day);
+            day_list.push(d);
+          });
         }
       }
     } else {
